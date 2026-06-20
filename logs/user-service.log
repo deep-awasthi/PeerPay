@@ -68,3 +68,93 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 15:40:31.003 [http-nio-8081-exec-3] INFO  c.peerpay.user.service.UserService [] - User registered successfully. ID: d94a8e9e-8998-4d6a-a951-d4a73408b238
 15:40:36.714 [http-nio-8081-exec-4] INFO  c.peerpay.user.service.UserService [] - Attempting login for user: arjun@peerpay.com
 15:40:36.819 [http-nio-8081-exec-4] INFO  c.peerpay.user.service.UserService [] - User authenticated. Generating JWT...
+15:50:42,743 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29799ms before attempting reconnection.
+15:51:12,694 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:51:12,790 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29785ms before attempting reconnection.
+15:51:42,594 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:51:42,596 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29984ms before attempting reconnection.
+15:52:12,589 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:52:12,593 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29993ms before attempting reconnection.
+15:52:42,602 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:52:42,605 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29986ms before attempting reconnection.
+15:53:12,598 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)

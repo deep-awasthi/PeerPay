@@ -522,3 +522,115 @@ Original Stack Trace:
 		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:50:42.057 [lettuce-eventExecutorLoop-3-1] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/127.0.0.1:6379
+15:50:42,115 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29980ms before attempting reconnection.
+15:50:42.189 [lettuce-eventExecutorLoop-3-1] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:50:47.108 [lettuce-eventExecutorLoop-3-4] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:50:47.119 [lettuce-nioEventLoop-5-5] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:50:59.510 [lettuce-eventExecutorLoop-3-6] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:50:59.519 [lettuce-nioEventLoop-5-7] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:51:12,122 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:51:12,140 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29965ms before attempting reconnection.
+15:51:16.009 [lettuce-eventExecutorLoop-3-7] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:51:16.012 [lettuce-nioEventLoop-5-8] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:51:42,117 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:548)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:51:42,119 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29991ms before attempting reconnection.
+15:51:46.106 [lettuce-eventExecutorLoop-3-3] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:51:46.112 [lettuce-nioEventLoop-5-1] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:52:12,120 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:52:12,123 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29992ms before attempting reconnection.
+15:52:16.211 [lettuce-eventExecutorLoop-3-8] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:52:16.220 [lettuce-nioEventLoop-5-2] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:52:42,127 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:52:42,142 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29977ms before attempting reconnection.
+15:52:46.303 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:52:46.310 [lettuce-nioEventLoop-5-3] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:53:12,125 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: connection failed. java.net.ConnectException: Connection refused
+	at java.net.ConnectException: Connection refused
+	at 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:555)
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:599)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at 	at java.base/java.net.Socket.connect(Socket.java:668)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:765)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.reopenSocket(AbstractLogstashTcpSocketAppender.java:706)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:570)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onEvent(AbstractLogstashTcpSocketAppender.java:291)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:363)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onEvent(AsyncDisruptorAppender.java:350)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:168)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1516)
+15:53:16.401 [lettuce-eventExecutorLoop-3-4] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:53:16.404 [lettuce-nioEventLoop-5-4] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:53:46.500 [lettuce-eventExecutorLoop-3-6] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:53:46.504 [lettuce-nioEventLoop-5-5] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:54:16.605 [lettuce-eventExecutorLoop-3-8] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:54:16.610 [lettuce-nioEventLoop-5-6] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
+15:54:46.707 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog [] - Reconnecting, last destination was localhost/<unresolved>:6379
+15:54:46.710 [lettuce-nioEventLoop-5-7] WARN  i.l.core.protocol.ConnectionWatchdog [] - Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: localhost/127.0.0.1:6379
