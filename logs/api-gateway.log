@@ -1,0 +1,524 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields (jar:nested:/Users/deepawasthi/Developer/Peerpay/api-gateway/target/api-gateway-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/logstash-logback-encoder-8.0.jar!/)
+WARNING: Please consider reporting this to the maintainers of class net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+15:37:56,101 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29972ms before attempting reconnection.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+15:37:56.459 [main] INFO  c.peerpay.gateway.GatewayApplication [] - Starting GatewayApplication v1.0.0-SNAPSHOT using Java 26.0.1 with PID 61485 (/Users/deepawasthi/Developer/Peerpay/api-gateway/target/api-gateway-1.0.0-SNAPSHOT.jar started by deepawasthi in /Users/deepawasthi/Developer/Peerpay)
+15:37:56.460 [main] DEBUG c.peerpay.gateway.GatewayApplication [] - Running with Spring Boot v3.4.1, Spring v6.2.1
+15:37:56.460 [main] INFO  c.peerpay.gateway.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+15:38:01.626 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Multiple Spring Data modules found, entering strict repository configuration mode
+15:38:01.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:38:01.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+15:38:02.798 [main] INFO  o.s.cloud.context.scope.GenericScope [] - BeanFactory id=50069e00-9d3c-3fec-bc03-c8f96428c628
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (jar:nested:/Users/deepawasthi/Developer/Peerpay/api-gateway/target/api-gateway-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/netty-common-4.1.116.Final.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+15:38:05.679 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders [] - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+15:38:12.919 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+15:38:12.923 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+15:38:14.643 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 4 endpoints beneath base path '/actuator'
+15:38:17.859 [main] INFO  o.s.b.w.e.netty.NettyWebServer [] - Netty started on port 8080 (http)
+15:38:18.318 [main] INFO  c.peerpay.gateway.GatewayApplication [] - Started GatewayApplication in 25.893 seconds (process running for 28.275)
+15:38:27,776 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 28355ms before attempting reconnection.
+15:39:13.899 [reactor-http-nio-2] INFO  c.p.g.filter.RequestLoggingFilter [b862a253-1f93-4053-bd78-ef38754a1682] - ➜ POST /api/v1/users/register | Client: 0:0:0:0:0:0:0:1 | TraceID: b862a253-1f93-4053-bd78-ef38754a1682
+15:39:16.866 [reactor-http-nio-2] ERROR o.s.w.s.a.HttpWebHandlerAdapter [b862a253-1f93-4053-bd78-ef38754a1682] - [9f3e5db4-1] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/users/register", but ServerHttpResponse already committed (201 CREATED)
+15:39:16.868 [reactor-http-nio-2] ERROR r.n.http.server.HttpServerOperations [b862a253-1f93-4053-bd78-ef38754a1682] - [9f3e5db4-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57805] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users/register" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySchedule(MonoSendMany.java:434)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:598)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:118)
+		at io.netty.util.concurrent.PromiseCombiner.tryPromise(PromiseCombiner.java:170)
+		at io.netty.util.concurrent.PromiseCombiner.access$600(PromiseCombiner.java:35)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete0(PromiseCombiner.java:62)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete(PromiseCombiner.java:44)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.util.internal.PromiseNotificationUtil.trySuccess(PromiseNotificationUtil.java:48)
+		at io.netty.channel.ChannelOutboundBuffer.safeSuccess(ChannelOutboundBuffer.java:748)
+		at io.netty.channel.ChannelOutboundBuffer.remove(ChannelOutboundBuffer.java:303)
+		at io.netty.channel.ChannelOutboundBuffer.removeBytes(ChannelOutboundBuffer.java:383)
+		at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:437)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.flush(CombinedChannelDuplexHandler.java:531)
+		at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+		at io.netty.channel.CombinedChannelDuplexHandler.flush(CombinedChannelDuplexHandler.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.http.server.HttpTrafficHandler.flush(HttpTrafficHandler.java:347)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.channel.MonoSendMany$SendManyInner$AsyncFlush.run(MonoSendMany.java:800)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:40:30.811 [reactor-http-nio-5] INFO  c.p.g.filter.RequestLoggingFilter [b2a8bc2d-263e-4857-82c1-1da27a70715b] - ➜ POST /api/v1/users/register | Client: 0:0:0:0:0:0:0:1 | TraceID: b2a8bc2d-263e-4857-82c1-1da27a70715b
+15:40:31.061 [reactor-http-nio-5] ERROR o.s.w.s.a.HttpWebHandlerAdapter [b2a8bc2d-263e-4857-82c1-1da27a70715b] - [113dbdad-2] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/users/register", but ServerHttpResponse already committed (201 CREATED)
+15:40:31.062 [reactor-http-nio-5] ERROR r.n.http.server.HttpServerOperations [b2a8bc2d-263e-4857-82c1-1da27a70715b] - [113dbdad-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57811] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users/register" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:40:36.640 [reactor-http-nio-7] INFO  c.p.g.filter.RequestLoggingFilter [6d98310e-0dcf-47ee-85b9-e29e8c41855f] - ➜ POST /api/v1/users/login | Client: 0:0:0:0:0:0:0:1 | TraceID: 6d98310e-0dcf-47ee-85b9-e29e8c41855f
+15:40:37.062 [reactor-http-nio-7] ERROR o.s.w.s.a.HttpWebHandlerAdapter [6d98310e-0dcf-47ee-85b9-e29e8c41855f] - [29e50331-3] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/users/login", but ServerHttpResponse already committed (200 OK)
+15:40:37.064 [reactor-http-nio-7] ERROR r.n.http.server.HttpServerOperations [6d98310e-0dcf-47ee-85b9-e29e8c41855f] - [29e50331-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57814] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users/login" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySchedule(MonoSendMany.java:434)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:598)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:118)
+		at io.netty.util.concurrent.PromiseCombiner.tryPromise(PromiseCombiner.java:170)
+		at io.netty.util.concurrent.PromiseCombiner.access$600(PromiseCombiner.java:35)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete0(PromiseCombiner.java:62)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete(PromiseCombiner.java:44)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.util.internal.PromiseNotificationUtil.trySuccess(PromiseNotificationUtil.java:48)
+		at io.netty.channel.ChannelOutboundBuffer.safeSuccess(ChannelOutboundBuffer.java:748)
+		at io.netty.channel.ChannelOutboundBuffer.remove(ChannelOutboundBuffer.java:303)
+		at io.netty.channel.ChannelOutboundBuffer.removeBytes(ChannelOutboundBuffer.java:383)
+		at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:437)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.flush(CombinedChannelDuplexHandler.java:531)
+		at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+		at io.netty.channel.CombinedChannelDuplexHandler.flush(CombinedChannelDuplexHandler.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.http.server.HttpTrafficHandler.flush(HttpTrafficHandler.java:347)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.channel.MonoSendMany$SendManyInner$AsyncFlush.run(MonoSendMany.java:800)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:41:07.362 [reactor-http-nio-8] INFO  c.p.g.filter.RequestLoggingFilter [f711527b-7ddc-4043-b276-cef961dbe12d] - ➜ POST /api/v1/payments/initiate | Client: 0:0:0:0:0:0:0:1 | TraceID: f711527b-7ddc-4043-b276-cef961dbe12d
+15:41:07.929 [lettuce-nioEventLoop-5-1] INFO  c.p.g.filter.AuthenticationFilter [] - Authenticated user: 5dc6c840-2c9c-4358-acd8-a456c7715fa6 (arjun@peerpay.com)
+15:41:09.449 [reactor-http-nio-8] ERROR o.s.w.s.a.HttpWebHandlerAdapter [f711527b-7ddc-4043-b276-cef961dbe12d] - [a74d03d4-4] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/payments/initiate", but ServerHttpResponse already committed (201 CREATED)
+15:41:09.454 [reactor-http-nio-8] ERROR r.n.http.server.HttpServerOperations [f711527b-7ddc-4043-b276-cef961dbe12d] - [a74d03d4-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57823] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/payments/initiate" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySchedule(MonoSendMany.java:434)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:598)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:118)
+		at io.netty.util.concurrent.PromiseCombiner.tryPromise(PromiseCombiner.java:170)
+		at io.netty.util.concurrent.PromiseCombiner.access$600(PromiseCombiner.java:35)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete0(PromiseCombiner.java:62)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete(PromiseCombiner.java:44)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.util.internal.PromiseNotificationUtil.trySuccess(PromiseNotificationUtil.java:48)
+		at io.netty.channel.ChannelOutboundBuffer.safeSuccess(ChannelOutboundBuffer.java:748)
+		at io.netty.channel.ChannelOutboundBuffer.remove(ChannelOutboundBuffer.java:303)
+		at io.netty.channel.ChannelOutboundBuffer.removeBytes(ChannelOutboundBuffer.java:383)
+		at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:437)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.flush(CombinedChannelDuplexHandler.java:531)
+		at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+		at io.netty.channel.CombinedChannelDuplexHandler.flush(CombinedChannelDuplexHandler.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.http.server.HttpTrafficHandler.flush(HttpTrafficHandler.java:347)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.channel.MonoSendMany$SendManyInner$AsyncFlush.run(MonoSendMany.java:800)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:42:39.696 [reactor-http-nio-2] INFO  c.p.g.filter.RequestLoggingFilter [5e1cfeb2-c85f-4102-8e66-7b01f9894905] - ➜ POST /api/v1/payments/initiate | Client: 0:0:0:0:0:0:0:1 | TraceID: 5e1cfeb2-c85f-4102-8e66-7b01f9894905
+15:42:39.777 [lettuce-nioEventLoop-5-1] INFO  c.p.g.filter.AuthenticationFilter [] - Authenticated user: 5dc6c840-2c9c-4358-acd8-a456c7715fa6 (arjun@peerpay.com)
+15:42:40.226 [reactor-http-nio-2] ERROR o.s.w.s.a.HttpWebHandlerAdapter [5e1cfeb2-c85f-4102-8e66-7b01f9894905] - [e221c911-5] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/payments/initiate", but ServerHttpResponse already committed (200 OK)
+15:42:40.228 [reactor-http-nio-2] ERROR r.n.http.server.HttpServerOperations [5e1cfeb2-c85f-4102-8e66-7b01f9894905] - [e221c911-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57836] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/payments/initiate" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:43:45.488 [reactor-http-nio-4] INFO  c.p.g.filter.RequestLoggingFilter [03bc1ef8-da9a-4f19-90f2-2013c489cbb4] - ➜ POST /api/v1/payments/b292f22e-15b2-4034-ac43-dddb62f417b2/complete | Client: 0:0:0:0:0:0:0:1 | TraceID: 03bc1ef8-da9a-4f19-90f2-2013c489cbb4
+15:43:45.510 [lettuce-nioEventLoop-5-1] INFO  c.p.g.filter.AuthenticationFilter [] - Authenticated user: 5dc6c840-2c9c-4358-acd8-a456c7715fa6 (arjun@peerpay.com)
+15:43:45.785 [reactor-http-nio-4] ERROR o.s.w.s.a.HttpWebHandlerAdapter [03bc1ef8-da9a-4f19-90f2-2013c489cbb4] - [a6a82071-6] Error [java.lang.UnsupportedOperationException] for HTTP POST "/api/v1/payments/b292f22e-15b2-4034-ac43-dddb62f417b2/complete", but ServerHttpResponse already committed (200 OK)
+15:43:45.786 [reactor-http-nio-4] ERROR r.n.http.server.HttpServerOperations [03bc1ef8-da9a-4f19-90f2-2013c489cbb4] - [a6a82071-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57842] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/payments/b292f22e-15b2-4034-ac43-dddb62f417b2/complete" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySchedule(MonoSendMany.java:434)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:598)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:118)
+		at io.netty.util.concurrent.PromiseCombiner.tryPromise(PromiseCombiner.java:170)
+		at io.netty.util.concurrent.PromiseCombiner.access$600(PromiseCombiner.java:35)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete0(PromiseCombiner.java:62)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete(PromiseCombiner.java:44)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.util.internal.PromiseNotificationUtil.trySuccess(PromiseNotificationUtil.java:48)
+		at io.netty.channel.ChannelOutboundBuffer.safeSuccess(ChannelOutboundBuffer.java:748)
+		at io.netty.channel.ChannelOutboundBuffer.remove(ChannelOutboundBuffer.java:303)
+		at io.netty.channel.ChannelOutboundBuffer.removeBytes(ChannelOutboundBuffer.java:383)
+		at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:437)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.flush(CombinedChannelDuplexHandler.java:531)
+		at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+		at io.netty.channel.CombinedChannelDuplexHandler.flush(CombinedChannelDuplexHandler.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.http.server.HttpTrafficHandler.flush(HttpTrafficHandler.java:347)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.channel.MonoSendMany$SendManyInner$AsyncFlush.run(MonoSendMany.java:800)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:44:56.762 [reactor-http-nio-6] INFO  c.p.g.filter.RequestLoggingFilter [4817b868-5cae-490a-926d-97e56f9a7382] - ➜ GET /api/v1/ledger/balance/5dc6c840-2c9c-4358-acd8-a456c7715fa6 | Client: 0:0:0:0:0:0:0:1 | TraceID: 4817b868-5cae-490a-926d-97e56f9a7382
+15:44:56.777 [lettuce-nioEventLoop-5-1] INFO  c.p.g.filter.AuthenticationFilter [] - Authenticated user: 5dc6c840-2c9c-4358-acd8-a456c7715fa6 (arjun@peerpay.com)
+15:44:57.431 [reactor-http-nio-6] ERROR o.s.w.s.a.HttpWebHandlerAdapter [4817b868-5cae-490a-926d-97e56f9a7382] - [9c5d02a3-7] Error [java.lang.UnsupportedOperationException] for HTTP GET "/api/v1/ledger/balance/5dc6c840-2c9c-4358-acd8-a456c7715fa6", but ServerHttpResponse already committed (200 OK)
+15:44:57.431 [reactor-http-nio-6] ERROR r.n.http.server.HttpServerOperations [4817b868-5cae-490a-926d-97e56f9a7382] - [9c5d02a3-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57847] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/v1/ledger/balance/5dc6c840-2c9c-4358-acd8-a456c7715fa6" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+15:45:06.882 [reactor-http-nio-8] INFO  c.p.g.filter.RequestLoggingFilter [681f9d46-3095-48b5-a28e-f5a18cfb35dc] - ➜ GET /api/v1/ledger/balance/d94a8e9e-8998-4d6a-a951-d4a73408b238 | Client: 0:0:0:0:0:0:0:1 | TraceID: 681f9d46-3095-48b5-a28e-f5a18cfb35dc
+15:45:06.934 [lettuce-nioEventLoop-5-1] INFO  c.p.g.filter.AuthenticationFilter [] - Authenticated user: 5dc6c840-2c9c-4358-acd8-a456c7715fa6 (arjun@peerpay.com)
+15:45:07.013 [reactor-http-nio-8] ERROR o.s.w.s.a.HttpWebHandlerAdapter [681f9d46-3095-48b5-a28e-f5a18cfb35dc] - [b5178839-8] Error [java.lang.UnsupportedOperationException] for HTTP GET "/api/v1/ledger/balance/d94a8e9e-8998-4d6a-a951-d4a73408b238", but ServerHttpResponse already committed (200 OK)
+15:45:07.013 [reactor-http-nio-8] ERROR r.n.http.server.HttpServerOperations [681f9d46-3095-48b5-a28e-f5a18cfb35dc] - [b5178839-1, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:57852] Error finishing response. Closing connection
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/v1/ledger/balance/d94a8e9e-8998-4d6a-a951-d4a73408b238" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.http.ReadOnlyHttpHeaders.add(ReadOnlyHttpHeaders.java:97)
+		at com.peerpay.gateway.filter.RequestLoggingFilter.lambda$filter$0(RequestLoggingFilter.java:72)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+		at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:229)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:250)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:324)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+		at org.springframework.http.server.reactive.ChannelSendOperator$WriteCompletionBarrier.onComplete(ChannelSendOperator.java:428)
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:210)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.run(MonoSendMany.java:349)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySchedule(MonoSendMany.java:434)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:598)
+		at reactor.netty.channel.MonoSendMany$SendManyInner.trySuccess(MonoSendMany.java:118)
+		at io.netty.util.concurrent.PromiseCombiner.tryPromise(PromiseCombiner.java:170)
+		at io.netty.util.concurrent.PromiseCombiner.access$600(PromiseCombiner.java:35)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete0(PromiseCombiner.java:62)
+		at io.netty.util.concurrent.PromiseCombiner$1.operationComplete(PromiseCombiner.java:44)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.util.internal.PromiseNotificationUtil.trySuccess(PromiseNotificationUtil.java:48)
+		at io.netty.channel.ChannelOutboundBuffer.safeSuccess(ChannelOutboundBuffer.java:748)
+		at io.netty.channel.ChannelOutboundBuffer.remove(ChannelOutboundBuffer.java:303)
+		at io.netty.channel.ChannelOutboundBuffer.removeBytes(ChannelOutboundBuffer.java:383)
+		at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:437)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.flush(CombinedChannelDuplexHandler.java:531)
+		at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+		at io.netty.channel.CombinedChannelDuplexHandler.flush(CombinedChannelDuplexHandler.java:356)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.http.server.HttpTrafficHandler.flush(HttpTrafficHandler.java:347)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:937)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+		at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+		at reactor.netty.channel.MonoSendMany$SendManyInner$AsyncFlush.run(MonoSendMany.java:800)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1516)

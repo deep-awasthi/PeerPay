@@ -1,0 +1,5 @@
+com/peerpay/gateway/GatewayApplication.class
+com/peerpay/gateway/filter/RequestLoggingFilter.class
+com/peerpay/gateway/filter/RateLimitFilter.class
+com/peerpay/gateway/config/CorsConfig.class
+com/peerpay/gateway/filter/AuthenticationFilter.class

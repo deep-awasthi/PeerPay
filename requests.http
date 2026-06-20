@@ -1,0 +1,109 @@
+### PeerPay API Gateway Endpoint
+@gatewayUrl = http://localhost:8080
+@jwtToken = <PASTE_JWT_TOKEN_HERE>
+@payerId = <PASTE_PAYER_ID_HERE>
+@payeeId = <PASTE_PAYEE_ID_HERE>
+@transactionId = <PASTE_TRANSACTION_ID_HERE>
+
+### 1. Register Payer (User A)
+POST {{gatewayUrl}}/api/v1/users/register
+Content-Type: application/json
+
+{
+  "name": "Arjun Kumar",
+  "email": "arjun@peerpay.com",
+  "phone": "9876543210",
+  "upiId": "arjun@peerpay",
+  "password": "secure_password"
+}
+
+### 2. Register Payee (User B)
+POST {{gatewayUrl}}/api/v1/users/register
+Content-Type: application/json
+
+{
+  "name": "Neha Sharma",
+  "email": "neha@peerpay.com",
+  "phone": "9876543211",
+  "upiId": "neha@peerpay",
+  "password": "secure_password"
+}
+
+### 3. Login to Authenticate (User A)
+# Response returns JWT token under `data.token`. Copy and set as @jwtToken above.
+POST {{gatewayUrl}}/api/v1/users/login
+Content-Type: application/json
+
+{
+  "email": "arjun@peerpay.com",
+  "password": "secure_password"
+}
+
+### 4. Fetch User Profile
+GET {{gatewayUrl}}/api/v1/users/{{payerId}}
+Authorization: Bearer {{jwtToken}}
+
+### 5. Fetch User Profile by UPI ID
+GET {{gatewayUrl}}/api/v1/users/upi/neha@peerpay
+Authorization: Bearer {{jwtToken}}
+
+### 6. Initiate Payment
+# Requires unique X-Idempotency-Key header.
+# Copy generated transactionId from response and paste into @transactionId above.
+POST {{gatewayUrl}}/api/v1/payments/initiate
+Authorization: Bearer {{jwtToken}}
+X-Idempotency-Key: tx_idempotency_key_1001
+Content-Type: application/json
+
+{
+  "payerId": "{{payerId}}",
+  "payeeId": "{{payeeId}}",
+  "payerUpiId": "arjun@peerpay",
+  "payeeUpiId": "neha@peerpay",
+  "amount": 500.00,
+  "remarks": "Lunch share"
+}
+
+### 7. Test Idempotency (Re-send Step 6)
+# Sending request again with identical header key returns cached result directly.
+POST {{gatewayUrl}}/api/v1/payments/initiate
+Authorization: Bearer {{jwtToken}}
+X-Idempotency-Key: tx_idempotency_key_1001
+Content-Type: application/json
+
+{
+  "payerId": "{{payerId}}",
+  "payeeId": "{{payeeId}}",
+  "payerUpiId": "arjun@peerpay",
+  "payeeUpiId": "neha@peerpay",
+  "amount": 500.00,
+  "remarks": "Lunch share"
+}
+
+### 8. Simulate UPI PSP Network Success Callback
+# Triggers state transition to COMPLETED & publishes completion event to Kafka.
+POST {{gatewayUrl}}/api/v1/payments/{{transactionId}}/complete
+Authorization: Bearer {{jwtToken}}
+
+### 9. Simulate UPI PSP Network Failure Callback
+# Triggers state transition to FAILED.
+POST {{gatewayUrl}}/api/v1/payments/{{transactionId}}/fail?reason=INSUFFICIENT_FUNDS&errorCode=FAIL_401
+Authorization: Bearer {{jwtToken}}
+
+### 10. Check Payer Balance (Ledger Service)
+# Balance is computed double-entry (Sum of Credits - Sum of Debits). Should show debit of ₹500.
+GET {{gatewayUrl}}/api/v1/ledger/balance/{{payerId}}
+Authorization: Bearer {{jwtToken}}
+
+### 11. Check Payee Balance (Ledger Service)
+# Should show credit of ₹500.
+GET {{gatewayUrl}}/api/v1/ledger/balance/{{payeeId}}
+Authorization: Bearer {{jwtToken}}
+
+### 12. Run Reconciliation Verification
+# Reconciles transaction status against double-entry ledger entries.
+GET http://localhost:8085/api/v1/reconciliation/validate/{{transactionId}}
+
+### 13. Query DLQ Backlog Audit
+# View message failures captured by the DLQ consumer.
+GET http://localhost:8085/api/v1/reconciliation/dlq

@@ -1,0 +1,406 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields (jar:nested:/Users/deepawasthi/Developer/Peerpay/notification-service/target/notification-service-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/logstash-logback-encoder-8.0.jar!/)
+WARNING: Please consider reporting this to the maintainers of class net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+15:37:54,036 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29927ms before attempting reconnection.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+15:37:54.516 [main] INFO  c.p.n.NotificationServiceApplication [] - Starting NotificationServiceApplication v1.0.0-SNAPSHOT using Java 26.0.1 with PID 61481 (/Users/deepawasthi/Developer/Peerpay/notification-service/target/notification-service-1.0.0-SNAPSHOT.jar started by deepawasthi in /Users/deepawasthi/Developer/Peerpay)
+15:37:54.518 [main] DEBUG c.p.n.NotificationServiceApplication [] - Running with Spring Boot v3.4.1, Spring v6.2.1
+15:37:54.518 [main] INFO  c.p.n.NotificationServiceApplication [] - No active profile set, falling back to 1 default profile: "default"
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/deepawasthi/Developer/Peerpay/notification-service/target/notification-service-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.34.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+15:37:59.907 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8084 (http)
+15:38:00.131 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+15:38:00.142 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+15:38:00.210 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+15:38:00.212 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 5434 ms
+15:38:02.054 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean [] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+15:38:04.798 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoints beneath base path '/actuator'
+15:38:05.829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8084 (http) with context path '/'
+15:38:06.018 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-peerpay-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = peerpay-notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:38:06.470 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector [] - initializing Kafka metrics collector
+15:38:07.591 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - These configurations '[spring.json.trusted.packages, spring.json.value.default.type]' were supplied but are not used yet.
+15:38:07.595 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka version: 3.8.1
+15:38:07.596 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka commitId: 70d6ff42debf7e17
+15:38:07.596 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka startTimeMs: 1781950087593
+15:38:07.631 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Subscribed to topic(s): peerpay.payments.failed
+15:38:07.689 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-peerpay-notification-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = peerpay-notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:38:07.690 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector [] - initializing Kafka metrics collector
+15:38:07.717 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - These configurations '[spring.json.trusted.packages, spring.json.value.default.type]' were supplied but are not used yet.
+15:38:07.717 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka version: 3.8.1
+15:38:07.717 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka commitId: 70d6ff42debf7e17
+15:38:07.717 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka startTimeMs: 1781950087717
+15:38:07.736 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Subscribed to topic(s): peerpay.payments.initiated
+15:38:07.754 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-peerpay-notification-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = peerpay-notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:38:07.756 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector [] - initializing Kafka metrics collector
+15:38:07.775 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - These configurations '[spring.json.trusted.packages, spring.json.value.default.type]' were supplied but are not used yet.
+15:38:07.776 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka version: 3.8.1
+15:38:07.776 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka commitId: 70d6ff42debf7e17
+15:38:07.776 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka startTimeMs: 1781950087776
+15:38:07.787 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Subscribed to topic(s): peerpay.payments.completed
+15:38:08.222 [main] INFO  c.p.n.NotificationServiceApplication [] - Started NotificationServiceApplication in 17.734 seconds (process running for 20.237)
+15:38:09.998 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  org.apache.kafka.clients.Metadata [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Cluster ID: yA_b4S0iRxmmq4260w0_0w
+15:38:10.001 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  org.apache.kafka.clients.Metadata [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Cluster ID: yA_b4S0iRxmmq4260w0_0w
+15:38:10.001 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Cluster ID: yA_b4S0iRxmmq4260w0_0w
+15:38:15.083 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+15:38:15.081 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+15:38:15.082 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+15:38:15.134 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] (Re-)joining group
+15:38:15.134 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] (Re-)joining group
+15:38:15.138 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] (Re-)joining group
+15:38:15.583 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Request joining group due to: need to re-join with the given member-id: consumer-peerpay-notification-group-3-3bc18788-512c-42c9-907f-8a1db425c4b0
+15:38:15.583 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Request joining group due to: need to re-join with the given member-id: consumer-peerpay-notification-group-1-e51956ee-0c5f-4d06-aaa3-c267aae197e7
+15:38:15.583 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Request joining group due to: need to re-join with the given member-id: consumer-peerpay-notification-group-2-44f204f3-b95b-4957-9cc9-6ad719bdb16d
+15:38:15.585 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] (Re-)joining group
+15:38:15.585 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] (Re-)joining group
+15:38:15.587 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] (Re-)joining group
+15:38:23.314 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-1-e51956ee-0c5f-4d06-aaa3-c267aae197e7', protocol='range'}
+15:38:23.314 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-3-3bc18788-512c-42c9-907f-8a1db425c4b0', protocol='range'}
+15:38:23.314 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-2-44f204f3-b95b-4957-9cc9-6ad719bdb16d', protocol='range'}
+15:38:23.753 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Finished assignment for group at generation 1: {consumer-peerpay-notification-group-1-e51956ee-0c5f-4d06-aaa3-c267aae197e7=Assignment(partitions=[peerpay.payments.failed-0, peerpay.payments.failed-1, peerpay.payments.failed-2]), consumer-peerpay-notification-group-2-44f204f3-b95b-4957-9cc9-6ad719bdb16d=Assignment(partitions=[peerpay.payments.initiated-0, peerpay.payments.initiated-1, peerpay.payments.initiated-2]), consumer-peerpay-notification-group-3-3bc18788-512c-42c9-907f-8a1db425c4b0=Assignment(partitions=[peerpay.payments.completed-0, peerpay.payments.completed-1, peerpay.payments.completed-2])}
+15:38:24,364 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29604ms before attempting reconnection.
+15:38:25.509 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-1-e51956ee-0c5f-4d06-aaa3-c267aae197e7', protocol='range'}
+15:38:25.529 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-3-3bc18788-512c-42c9-907f-8a1db425c4b0', protocol='range'}
+15:38:25.533 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Notifying assignor about the new Assignment(partitions=[peerpay.payments.failed-0, peerpay.payments.failed-1, peerpay.payments.failed-2])
+15:38:25.533 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Notifying assignor about the new Assignment(partitions=[peerpay.payments.completed-0, peerpay.payments.completed-1, peerpay.payments.completed-2])
+15:38:25.535 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-peerpay-notification-group-2-44f204f3-b95b-4957-9cc9-6ad719bdb16d', protocol='range'}
+15:38:25.536 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Notifying assignor about the new Assignment(partitions=[peerpay.payments.initiated-0, peerpay.payments.initiated-1, peerpay.payments.initiated-2])
+15:38:25.594 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Adding newly assigned partitions: peerpay.payments.initiated-0, peerpay.payments.initiated-1, peerpay.payments.initiated-2
+15:38:25.594 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Adding newly assigned partitions: peerpay.payments.failed-0, peerpay.payments.failed-1, peerpay.payments.failed-2
+15:38:25.594 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Adding newly assigned partitions: peerpay.payments.completed-0, peerpay.payments.completed-1, peerpay.payments.completed-2
+15:38:26.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.initiated-1
+15:38:26.023 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.failed-1
+15:38:26.023 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.completed-1
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.initiated-0
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.failed-0
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.completed-0
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.initiated-2
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.completed-2
+15:38:26.024 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Found no committed offset for partition peerpay.payments.failed-2
+15:38:26.475 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.failed-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.475 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.initiated-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.478 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.completed-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.478 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.failed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.478 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.failed-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.479 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.completed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.479 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.completed-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.initiated-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Resetting offset for partition peerpay.payments.initiated-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:26.530 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [] - peerpay-notification-group: partitions assigned: [peerpay.payments.initiated-0, peerpay.payments.initiated-1, peerpay.payments.initiated-2]
+15:38:26.530 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [] - peerpay-notification-group: partitions assigned: [peerpay.payments.failed-0, peerpay.payments.failed-1, peerpay.payments.failed-2]
+15:38:26.530 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [] - peerpay-notification-group: partitions assigned: [peerpay.payments.completed-0, peerpay.payments.completed-1, peerpay.payments.completed-2]
+15:39:07.729 [micrometer-kafka-metrics] WARN  i.m.core.instrument.MeterRegistry [] - This Gauge has been already registered (MeterId{name='kafka.consumer.fetch.manager.fetch.size.max', tags=[tag(client.id=consumer-peerpay-notification-group-1),tag(kafka.version=3.8.1),tag(spring.id=kafkaConsumerFactory.consumer-peerpay-notification-group-1)]}), the Gauge registration will be ignored. Note that subsequent logs will be logged at debug level.
+15:41:11.827 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.p.n.k.NotificationEventConsumer [] - Received PaymentInitiated event from Kafka
+15:41:11.976 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.p.n.k.NotificationEventConsumer [] - 🔔 [NOTIFICATION SENT] SMS to payer (arjun@peerpay): Payment of ₹300.00 to neha@peerpay is INITIATED. Txn ID: b292f22e-15b2-4034-ac43-dddb62f417b2
+15:43:46.235 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.p.n.k.NotificationEventConsumer [] - Received PaymentCompleted event from Kafka
+15:43:46.346 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.p.n.k.NotificationEventConsumer [] - 🔔 [NOTIFICATION SENT] SMS to payer (arjun@peerpay): Payment of ₹300.00 to neha@peerpay is SUCCESSFUL. Txn ID: b292f22e-15b2-4034-ac43-dddb62f417b2
+15:43:46.349 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  c.p.n.k.NotificationEventConsumer [] - 🔔 [NOTIFICATION SENT] SMS to payee (neha@peerpay): Account credited with ₹300.00 from arjun@peerpay. Txn ID: b292f22e-15b2-4034-ac43-dddb62f417b2
+15:47:10.180 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient [] - [Consumer clientId=consumer-peerpay-notification-group-2, groupId=peerpay-notification-group] Node -1 disconnected.
+15:47:10.180 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.apache.kafka.clients.NetworkClient [] - [Consumer clientId=consumer-peerpay-notification-group-3, groupId=peerpay-notification-group] Node -1 disconnected.
+15:47:10.607 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.apache.kafka.clients.NetworkClient [] - [Consumer clientId=consumer-peerpay-notification-group-1, groupId=peerpay-notification-group] Node -1 disconnected.

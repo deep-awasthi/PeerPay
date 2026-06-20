@@ -1,0 +1,8 @@
+com/peerpay/ledger/LedgerServiceApplication.class
+com/peerpay/ledger/controller/LedgerController.class
+com/peerpay/ledger/model/LedgerEntry$Builder.class
+com/peerpay/ledger/model/EntryType.class
+com/peerpay/ledger/service/LedgerService.class
+com/peerpay/ledger/model/LedgerEntry.class
+com/peerpay/ledger/repository/LedgerEntryRepository.class
+com/peerpay/ledger/kafka/LedgerEventConsumer.class

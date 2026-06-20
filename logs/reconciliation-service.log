@@ -1,0 +1,182 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields (jar:nested:/Users/deepawasthi/Developer/Peerpay/reconciliation-service/target/reconciliation-service-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/logstash-logback-encoder-8.0.jar!/)
+WARNING: Please consider reporting this to the maintainers of class net.logstash.logback.encoder.com.lmax.disruptor.RingBufferFields
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+15:37:56,075 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29980ms before attempting reconnection.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+15:37:56.626 [main] INFO  c.p.r.ReconciliationServiceApplication [] - Starting ReconciliationServiceApplication v1.0.0-SNAPSHOT using Java 26.0.1 with PID 61483 (/Users/deepawasthi/Developer/Peerpay/reconciliation-service/target/reconciliation-service-1.0.0-SNAPSHOT.jar started by deepawasthi in /Users/deepawasthi/Developer/Peerpay)
+15:37:56.627 [main] DEBUG c.p.r.ReconciliationServiceApplication [] - Running with Spring Boot v3.4.1, Spring v6.2.1
+15:37:56.628 [main] INFO  c.p.r.ReconciliationServiceApplication [] - No active profile set, falling back to 1 default profile: "default"
+15:38:01.059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:38:01.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] - Finished Spring Data repository scanning in 566 ms. Found 1 JPA repository interface.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:nested:/Users/deepawasthi/Developer/Peerpay/reconciliation-service/target/reconciliation-service-1.0.0-SNAPSHOT.jar/!BOOT-INF/lib/tomcat-embed-core-10.1.34.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+15:38:06.515 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8085 (http)
+15:38:06.614 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+15:38:06.614 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+15:38:06.897 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+15:38:06.900 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 10203 ms
+15:38:08.768 [main] INFO  o.h.jpa.internal.util.LogHelper [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:38:09.533 [main] INFO  org.hibernate.Version [] - HHH000412: Hibernate ORM core version 6.6.4.Final
+15:38:09.935 [main] INFO  o.h.c.i.RegionFactoryInitiator [] - HHH000026: Second-level cache disabled
+15:38:12.376 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:38:12.689 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+15:38:14.361 [main] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@414d2821
+15:38:14.366 [main] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+15:38:14.625 [main] WARN  org.hibernate.orm.deprecation [] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:38:14.826 [main] INFO  o.hibernate.orm.connections.pooling [] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:38:19.075 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:38:19.512 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:38:20.713 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:38:20.935 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean [] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+15:38:25.509 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 3 endpoints beneath base path '/actuator'
+15:38:26,211 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - Log destination localhost/<unresolved>:5001: Waiting 29851ms before attempting reconnection.
+15:38:26.318 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8085 (http) with context path '/'
+15:38:26.587 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-peerpay-reconciliation-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = peerpay-reconciliation-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:38:27.082 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector [] - initializing Kafka metrics collector
+15:38:28.386 [main] INFO  o.a.k.c.consumer.ConsumerConfig [] - These configurations '[spring.json.trusted.packages]' were supplied but are not used yet.
+15:38:28.417 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka version: 3.8.1
+15:38:28.417 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka commitId: 70d6ff42debf7e17
+15:38:28.417 [main] INFO  o.a.kafka.common.utils.AppInfoParser [] - Kafka startTimeMs: 1781950108395
+15:38:28.511 [main] INFO  o.a.k.c.c.i.LegacyKafkaConsumer [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Subscribed to topic(s): peerpay.payments.dlq
+15:38:28.643 [main] INFO  c.p.r.ReconciliationServiceApplication [] - Started ReconciliationServiceApplication in 36.377 seconds (process running for 39.568)
+15:38:29.934 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Cluster ID: yA_b4S0iRxmmq4260w0_0w
+15:38:29.940 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+15:38:29.956 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] (Re-)joining group
+15:38:29.978 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Request joining group due to: need to re-join with the given member-id: consumer-peerpay-reconciliation-group-1-9857a07e-78e8-47da-ab74-4086fd7c7f78
+15:38:29.979 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] (Re-)joining group
+15:38:33.097 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-peerpay-reconciliation-group-1-9857a07e-78e8-47da-ab74-4086fd7c7f78', protocol='range'}
+15:38:33.385 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Finished assignment for group at generation 1: {consumer-peerpay-reconciliation-group-1-9857a07e-78e8-47da-ab74-4086fd7c7f78=Assignment(partitions=[peerpay.payments.dlq-0])}
+15:38:33.428 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-peerpay-reconciliation-group-1-9857a07e-78e8-47da-ab74-4086fd7c7f78', protocol='range'}
+15:38:33.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Notifying assignor about the new Assignment(partitions=[peerpay.payments.dlq-0])
+15:38:33.449 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Adding newly assigned partitions: peerpay.payments.dlq-0
+15:38:33.518 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Found no committed offset for partition peerpay.payments.dlq-0
+15:38:33.667 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Resetting offset for partition peerpay.payments.dlq-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+15:38:33.675 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [] - peerpay-reconciliation-group: partitions assigned: [peerpay.payments.dlq-0]
+15:40:00.270 [scheduling-1] INFO  c.p.r.service.ReconciliationService [] - Starting scheduled reconciliation check...
+15:40:00.749 [scheduling-1] INFO  c.p.r.service.ReconciliationService [] - ✓ [RECONCILIATION SUCCESS] No outstanding DLQ records found.
+15:45:00.045 [scheduling-1] INFO  c.p.r.service.ReconciliationService [] - Starting scheduled reconciliation check...
+15:45:00.253 [scheduling-1] INFO  c.p.r.service.ReconciliationService [] - ✓ [RECONCILIATION SUCCESS] No outstanding DLQ records found.
+15:45:14.368 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:45:14.372 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+15:45:14.435 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 63 ms
+15:45:14.699 [http-nio-8085-exec-1] INFO  c.p.r.service.ReconciliationService [] - Reconciling transaction: b292f22e-15b2-4034-ac43-dddb62f417b2
+15:45:14.986 [http-nio-8085-exec-1] INFO  c.p.r.service.ReconciliationService [] - Validation checklist complete. Transaction status is: COMPLETED
+15:47:30.049 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient [] - [Consumer clientId=consumer-peerpay-reconciliation-group-1, groupId=peerpay-reconciliation-group] Node -1 disconnected.

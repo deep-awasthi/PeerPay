@@ -1,0 +1,6 @@
+com/peerpay/user/service/UserService.class
+com/peerpay/user/UserServiceApplication.class
+com/peerpay/user/model/User.class
+com/peerpay/user/controller/UserController.class
+com/peerpay/user/repository/UserRepository.class
+com/peerpay/user/model/User$Builder.class

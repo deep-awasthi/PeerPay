@@ -1,0 +1,171 @@
+version: '3.9'
+
+services:
+  # ─────────────────────────────────────────────
+  # PostgreSQL – Shared instance, separate DBs
+  # ─────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: peerpay-postgres
+    environment:
+      POSTGRES_USER: peerpay
+      POSTGRES_PASSWORD: peerpay_secret
+      POSTGRES_DB: peerpay_users
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/init-databases.sql:/docker-entrypoint-initdb.d/init-databases.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U peerpay"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Redis – Idempotency keys & rate limiting
+  # ─────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: peerpay-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Zookeeper – Kafka dependency
+  # ─────────────────────────────────────────────
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.7.1
+    container_name: peerpay-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Apache Kafka – Event streaming
+  # ─────────────────────────────────────────────
+  kafka:
+    image: confluentinc/cp-kafka:7.7.1
+    container_name: peerpay-kafka
+    depends_on:
+      zookeeper:
+        condition: service_started
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    networks:
+      - peerpay-network
+
+  # Kafka topic initialization
+  kafka-init:
+    image: confluentinc/cp-kafka:7.7.1
+    container_name: peerpay-kafka-init
+    depends_on:
+      kafka:
+        condition: service_started
+    entrypoint: ["/bin/sh", "-c"]
+    command: |
+      "
+      echo 'Waiting for Kafka to be ready...'
+      cub kafka-ready -b kafka:29092 1 60
+
+      echo 'Creating Kafka topics...'
+      kafka-topics --create --if-not-exists --bootstrap-server kafka:29092 --partitions 3 --replication-factor 1 --topic peerpay.payments.initiated
+      kafka-topics --create --if-not-exists --bootstrap-server kafka:29092 --partitions 3 --replication-factor 1 --topic peerpay.payments.completed
+      kafka-topics --create --if-not-exists --bootstrap-server kafka:29092 --partitions 3 --replication-factor 1 --topic peerpay.payments.failed
+      kafka-topics --create --if-not-exists --bootstrap-server kafka:29092 --partitions 1 --replication-factor 1 --topic peerpay.payments.dlq
+
+      echo 'All topics created successfully.'
+      "
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Elasticsearch – Log storage & search
+  # ─────────────────────────────────────────────
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: peerpay-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Logstash – Log ingestion pipeline
+  # ─────────────────────────────────────────────
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.15.0
+    container_name: peerpay-logstash
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    ports:
+      - "5044:5044"
+      - "5001:5001/tcp"
+      - "5001:5001/udp"
+    volumes:
+      - ./infra/logstash/pipeline:/usr/share/logstash/pipeline:ro
+    environment:
+      LS_JAVA_OPTS: "-Xms256m -Xmx256m"
+    networks:
+      - peerpay-network
+
+  # ─────────────────────────────────────────────
+  # Kibana – Log visualization
+  # ─────────────────────────────────────────────
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.0
+    container_name: peerpay-kibana
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_HOSTS: '["http://elasticsearch:9200"]'
+    networks:
+      - peerpay-network
+
+volumes:
+  postgres_data:
+  redis_data:
+  elasticsearch_data:
+
+networks:
+  peerpay-network:
+    driver: bridge
